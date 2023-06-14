@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; 300 600 800 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-color1);
+}
+
+body {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--bg-color1);
+  color: var(--text-color2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+:root,
+:root.light {
+  --bg-color1: #e1ecf6;
+  --bg-color2: radial-gradient(circle, rgba(1, 76, 162, 1) 0%, rgba(0, 61, 172, 1) 6%);
+  --bg-color3: linear-gradient(0deg, rgba(38, 119, 193, 1) 0%, rgba(77, 142, 201, 1) 65%);
+  --bg-btn: #00318a;
+  --text-color1: #1e1e1e;
+  --text-color2: #f7f7f7;
+}
+
+header {
+  height: 120px;
+  background: var(--bg-color2);
+  /* position: relative;   */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 300;
+  color: var(--text-color2);
+}
+
+header a:visited {
+  color: var(--text-color2);
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  font-size: 20px;
+  margin-right: 20px;
+  color: var(--text-color2);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--bg-color1);
+}
+
+.menu-movel {
+  display: none;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    height: 300px;
+    background: var(--bg-color2);
+  }
+  
+  .titulo {
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--text-color1);
+  }
+  .titulo a:visited{
+    color: var(--text-color2);
+  }
+  
+  .footer-lista {
+    border-right: 3px solid var(--text-color2);
+  }
+  
+  .footer-lista ul {
+    max-width: 100px;
+    margin: 0px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .borda-left {
+    border-left: 3px solid var(--text-color2);
+  }
+  
+  .footer-lista h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color2);
+  }
+  
+  .footer-lista a {
+    color: var(--text-color2);
+    margin: 10px 0px;
+  }
+  
+  .fim {
+    text-align: center;
+    color: var(--text-color2);
+    background: var(--bg-btn);
+    padding: 5px;
+  }
+  
+  .fim span {
+    color: #ff0;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+@media screen and (max-width: 768px) {
+
+
+  main {
+      padding: 10px;
+  }
+
+  .menu-movel {
+      display: block;
+      width: 80%;
+      position: absolute;
+      top: 5%;
+      left: 15%;
+      text-align: right;
+      font-size: 25px;
+      margin-top: 8px;
+      color: #fff;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .secao1 {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .secao1 h2 {
+      bottom: 15px;
+  }
+
+  .secao2 {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      left: 10px;
+  }
+
+  .artigos {
+      /* height: 250px; */
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .artigos img {
+      width: auto;
+      height: 15.5em;
+  }
+
+  .artigos .texto .artigos-titulo {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 15px;
+      text-align: lrft;
+      text-decoration: underline;
+  }
+
+  .artigos .texto .artigos-texto {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 14px;
+      text-align: start;
+  }
+
+  .topico {
+      display: none;
+  }
+
+  footer {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+
+  footer h3 {
+      margin-top: 35px;
+  }
+
+  footer .contato {
+      display: flex;
+      flex-direction: row;
+  }
+
+  footer .contato a {
+      margin: 10% 20px;
+      margin-left: -12%; 
+  }
+
+  .footer-lista {
+      border-right: none;
+  }
+
+  .borda-left {
+      border-left: none;
+  }
+}
+
+header .menu.ativado {
+  background: rgba(0, 76, 162, 0.8);
+  position: relative;
+  display: grid;
+  color: var(--text-color2);
+  margin-top: 14.9%;
+  z-index: 1;
+  padding: 10px ;
+  border-radius: 0 0 4px 4px;
+}
+
+header .menu.ativado a{
+  margin-bottom: 10px;
+  text-align: justify;
+}

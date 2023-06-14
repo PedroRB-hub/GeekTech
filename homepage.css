@@ -1,0 +1,318 @@
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.secao1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+.secao1 h2 {
+    color: var(--text-color2);
+    position: relative;
+    left: 15%;
+    margin-top: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.secao1 .conteudo1 h2 {
+    color: var(--text-color2);
+    position: relative;
+    margin-top: 160%;
+}
+
+.conteudo1 {
+    grid-row: 1 / -1;
+}
+
+.conteudo1 img {
+    height: 100%;
+}
+
+img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.conteudo1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url('img/img-materia1.jfif');
+    background-size: cover;
+    background-attachment: scroll;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url('materias/img/gpu-capa.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url('materias/img/ssd-capa.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.secao2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+}
+
+.artigos {
+    background: var(--bg-color3);
+    color: var(--text-color2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.artigos img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.artigos-titulo {
+    margin: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.artigos-texto {
+    margin: 10px;
+    text-align: justify;
+}
+
+.texto {
+    margin-bottom: 20px;
+}
+
+.topico {
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    overflow: none;
+}
+
+.topico h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-color1);
+}
+
+.topico a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-btn);
+    color: var(--text-color2);
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 15px auto;
+    padding: 15px;
+}
+
+.topico a:hover {
+    cursor: pointer;
+}
+
+.topico a {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color2);
+}
+
+.topico a:visited {
+    color: var(--text-color2);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    height: 300px;
+    background: var(--bg-color2);
+}
+
+.titulo {
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--text-color2);
+}
+
+
+.footer-lista {
+    border-right: 3px solid var(--text-color2);
+}
+
+.footer-lista ul {
+    max-width: 100px;
+    margin: 0px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.borda-left {
+    border-left: 3px solid var(--text-color2);
+}
+
+.footer-lista h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color2);
+}
+
+.footer-lista a {
+    color: var(--text-color2);
+    margin: 10px 0px;
+}
+
+.fim {
+    text-align: center;
+    color: #ffff;
+    background-color: #05f;
+    margin: 0;
+    padding: 1%;
+}
+
+.fim span {
+    color: #ff0;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .menu-movel {
+        display: block;
+        width: 80%;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        text-align: right;
+        font-size: 25px;
+        margin-top: 8px;
+        color: #fff;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .secao1 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao1 h2 {
+        bottom: 15px;
+    }
+
+    .secao2 {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        left: 10px;
+    }
+
+    .artigos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .artigos img {
+        width: auto;
+        height: 15.5em;
+    }
+
+    .artigos .texto .artigos-titulo {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 15px;
+        text-align: left;
+        text-decoration: underline;
+    }
+
+    .artigos .texto .artigos-texto {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 14px;
+        text-align: start;
+    }
+
+    .topico {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    footer h3 {
+        margin-top: 35px;
+    }
+
+    footer .contato {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .contato a {
+        margin: 10% 20px;
+        margin-left: -12%;
+    }
+
+    .footer-lista {
+        border-right: none;
+    }
+
+    .borda-left {
+        border-left: none;
+    }
+}
+
+header .menu.ativado {
+    background: rgba(0, 76, 162, 0.8);
+    position: relative;
+    display: grid;
+    color: var(--text-color2);
+    margin-top: 14.9%;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+header .menu.ativado a {
+    margin-bottom: 10px;
+    text-align: justify;
+}

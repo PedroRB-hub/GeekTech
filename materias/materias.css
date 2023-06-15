@@ -1,7 +1,7 @@
-
 .artigo {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
 .container {
   background: var(--bg-color3);
 }
@@ -12,14 +12,16 @@ main {
   grid-template-columns: 2fr 1fr;
   margin: 20px 0px;
 }
+
 .imagem1 {
-  /* height: 500px; */
   max-width: 100%;
   object-fit: cover;
 }
+
 .container h2:first-child {
   font-size: 2rem;
 }
+
 .container h2 {
   font-size: 1.5rem;
   padding: 5px;
@@ -56,4 +58,17 @@ main {
 .materia h2 {
   color: var(--text-color1);
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .assuntos{
+    margin-top: 5%;
+  }
 }

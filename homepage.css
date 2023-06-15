@@ -1,3 +1,5 @@
+@import url(global/global.css);
+
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -212,4 +214,3 @@ img {
         display: none;
     }
 }
-

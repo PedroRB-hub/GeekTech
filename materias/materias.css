@@ -1,3 +1,5 @@
+@import url(../global/global.css);
+
 .artigo {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -61,14 +63,13 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-
   main {
     display: flex;
     flex-direction: column;
     padding: 10px;
   }
 
-  .assuntos{
+  .assuntos {
     margin-top: 5%;
   }
 }

@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="global/global.css">
     <title>GeekTech</title>
+    <script>
+        const ativaMenu = document.querySelector('.fa-bars')
+        const navMenu = document.querySelector('header .menu')
+    
+        ativaMenu.addEventListener('click', () => {
+          ativaMenu.classList.toggle('fa-x')
+          navMenu.classList.toggle('ativado')
+        })</script>
 </head>
 
 <body>

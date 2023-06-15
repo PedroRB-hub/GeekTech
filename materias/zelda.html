@@ -8,6 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Legend of Zelda™: Tears of the Kingdom - A emocionante jornada começa!</title>
+  <script>
+    const ativaMenu = document.querySelector('.fa-bars')
+    const navMenu = document.querySelector('header .menu')
+
+    ativaMenu.addEventListener('click', () => {
+      ativaMenu.classList.toggle('fa-x')
+      navMenu.classList.toggle('ativado')
+    })</script>
 </head>
 
 <body>

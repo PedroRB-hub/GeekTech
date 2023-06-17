@@ -31,7 +31,7 @@ figure {
 .fig1 {
     background-size: cover;
     background-position: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/zelda.jfif);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../materias/img/zelda-img1.png);
     background-size: 350px 350px;
 }
 

@@ -16,6 +16,7 @@ body {
     justify-content: center;
     margin: 50px;
 }
+
 figure {
     width: 300px;
     height: 350px;
@@ -31,12 +32,12 @@ figure {
 .fig1 {
     background-size: cover;
     background-position: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../materias/img/zelda-img1.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/zelda-img1.png);
     background-size: 350px 350px;
 }
 
 .fig2 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/img-ffxvi.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/Final-Fantasy.jpeg);
     background-size: cover;
     background-position: center;
     
@@ -59,3 +60,10 @@ figure {
     color: var(--text-color2);
 }
 
+.dark-mode .container h2 {
+    color: #fff;
+}
+
+.dark-mode figure {
+    box-shadow: 5px 5px 5px #550085;
+}

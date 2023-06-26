@@ -32,10 +32,10 @@ figure {
     background-size: cover;
     background-position: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/ia-capa.jpg);
-    background-size: 400px 350px;
-}
+    background-size: 300px 350px;
+} 
 
-.fig2 {
+ .fig2 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/cloud-capa.jpg);
     background-size: cover;
     background-position: center;
@@ -52,4 +52,12 @@ figure {
     margin-top: 230px;
     font-size: 1.1rem;
     color: var(--text-color2);
+}
+
+.dark-mode .container h2 {
+    color: #fff;
+}
+
+.dark-mode figure {
+    box-shadow: 5px 5px 5px #550085;
 }

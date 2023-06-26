@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Righteous&display=swap');
 
 * {
   padding: 0;
@@ -8,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: var(--text-color2);
 }
 
 a:visited {
@@ -19,16 +21,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: var(--bg-color1);
   color: var(--text-color2);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 :root,
@@ -58,6 +50,19 @@ header a:visited {
   color: var(--text-color2);
 }
 
+#toggle-mode {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  width: 65px;
+  height: 35px;
+  background-color: var(--bg-color2);
+  color: var(--text-color2);
+  border: 1px solid #fff;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
 .menu {
   width: 100%;
   text-align: center;
@@ -66,7 +71,7 @@ header a:visited {
 
 .menu a {
   font-size: 20px;
-  margin-right: 20px;
+  margin: 0 10px;
   color: var(--text-color2);
   text-decoration: none;
   transition: 0.3s;
@@ -141,9 +146,9 @@ footer .titulo {
 }
 
 .fim span {
-  color: #ff0;
-  text-decoration: underline;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Righteous', cursive;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,16 +158,23 @@ footer .titulo {
     padding: 10px;
   }
 
+  #toggle-mode {
+    top: 2.5%;
+    left: 2%;
+    height: 35px;
+  }
+
   .menu-movel {
     display: block;
     width: 80%;
     position: absolute;
-    top: 2.5%;
-    left: 15%;
+    top: 1.8%;
+    left: 17%;
     text-align: right;
     font-size: 25px;
     margin-top: 8px;
-    color: #fff;
+    color: var(--text-color2);
+    cursor: pointer;
   }
 
   .menu {
@@ -253,7 +265,7 @@ footer .titulo {
 }
 
 header .menu.ativado {
-  background: rgba(0, 76, 162, 0.8);
+  background: var(--bg-color2);
   position: relative;
   display: grid;
   color: var(--text-color2);
@@ -266,4 +278,32 @@ header .menu.ativado {
 header .menu.ativado a {
   margin-bottom: 10px;
   text-align: justify;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode header {
+  background: #250055;
+  color: #fff;
+  box-shadow: 2px 2px 2px #550085;
+}
+
+.dark-mode footer {
+  background: #250055;
+  color: #fff;
+}
+
+.dark-mode .topico h2 {
+  color: #fff;
+}
+
+.dark-mode .fim {
+  background: #350065;
+}
+
+.dark-mode header .menu.ativado {
+  background: #250055;
 }

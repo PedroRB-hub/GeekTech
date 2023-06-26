@@ -29,10 +29,9 @@ figure {
 }
 
 .fig1 {
-    background-size: cover;
     background-position: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/img-steamdeck.jpg);
-    background-size: 300px 350px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/steam-img1.jpg);
+    background-size: auto 350px;
 }
 
 .fig2 {
@@ -57,4 +56,12 @@ figure {
     margin-top: 230px;
     font-size: 1.1rem;
     color: var(--text-color2);
+}
+
+.dark-mode .container h2 {
+    color: #fff;
+}
+
+.dark-mode figure {
+    box-shadow: 5px 5px 5px #550085;
 }

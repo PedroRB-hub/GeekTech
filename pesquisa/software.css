@@ -7,15 +7,16 @@ body {
 .container h2 {
     text-align: center;
     margin-top: 5%;
-    font-size: 50px;
+    font-size: 50px ;
 }
 
 .materias {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px;
+    margin: 50px ;
 }
+
 figure {
     width: 300px;
     height: 350px;
@@ -29,13 +30,12 @@ figure {
 }
 
 .fig1 {
-    background-size: cover;
     background-position: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/ia-capa.jpg);
     background-size: 300px 350px;
 } 
 
- .fig2 {
+.fig2 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(242, 242, 242, 0) 50%), url(../img/cloud-capa.jpg);
     background-size: cover;
     background-position: center;
@@ -47,6 +47,7 @@ figure {
     color: var(--text-color1);
     text-align: center;
 }
+
 .title h3 {
     font-weight: 600;
     margin-top: 230px;
